@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [InetBanking]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.inetbanking.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Guru99 Banking APP(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.inetbanking.testCases.TC_Withdrawal_005">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="withdrawFromAccount"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_Withdrawal_005 -->
+    </classes>
+  </test> <!-- Guru99 Banking APP(failed) -->
+</suite> <!-- Failed suite [InetBanking] -->

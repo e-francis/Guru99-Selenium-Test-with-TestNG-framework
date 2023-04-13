@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "InetBanking">
+
+<listeners>
+	<listener class-name = "com.inetbanking.utilities.Reporting" />
+</listeners>
+
+<test name = "Guru99 Banking APP">
+	<parameter name = "browser" value = "firefox" />
+	<classes>
+		<class name = "com.inetbanking.testCases.TC_LoginTest_001" />
+	 	<class name = "com.inetbanking.testCases.TC_LoginDDT_002" />
+	 	<class name = "com.inetbanking.testCases.TC_AddCustomerTest_003" />
+	 	 <class name = "com.inetbanking.testCases.TC_CreateCustomerAccount_004" />
+	 	 <class name = "com.inetbanking.testCases.TC_Withdrawal_005" />
+	 	 
+	</classes>
+
+</test>
+
+</suite>
